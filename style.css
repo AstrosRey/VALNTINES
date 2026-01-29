@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'letra';
+    src: url(fonts/esp.ttf);
+}
+
+#square {
+    width: 33%; /*Size of square*/
+    height: 70%;
+    background-color: #f8e2e8;  /*Fill color inside*/
+    background-image: url('visual/hearts.png');
+    border: 2px solid black;    /*Balck border*/
+    box-shadow: 4px 4px 10px black;
+    transform: translate(0%, 20%)
+}
+
+#gif {
+    max-width: 350px;
+    transform: translate(0%, 15%);
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+#question {
+    font-family: 'letra';
+    font-size: 52px;
+    transform: translate(0%, 100%)
+}
+
+button {
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    margin: 0 10px;
+    font-size: 40px;
+    font-family: 'letra';
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    transform: translate(0%, 180%);
+    transition: scale 0.1s ease-in;
+}
+
+button:hover {
+    opacity: 0.95;
+    scale: 0.95;
+}

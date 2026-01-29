@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otra vez</title>
+    <link rel="stylesheet" href="style2.css">
+     <style>
+        body{
+            background-color: black;
+            background-position: center;
+            place-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="square">
+            <img id="gif" src="visual/enough.gif" alt="Love Gif">
+            <style>
+                #square {
+                    height: 360px;
+                    width: 640px;
+                }
+                #gif {
+                    height: 350px;
+                }
+            </style>
+        </div>
+        <h1 id="question">Will you be my valentine??</h1>
+        <h2 id="subtext">(click yes love. or else..)</h2>
+        <button id="yes-button" onclick="selectOption('yes')">Yes</button> <!-- Yes button -->
+        <style>
+            #subtext {
+                font-family: 'letra';
+                font-size: 32px;
+                color: white;
+                transform: translate(0%, 80%);
+            }
+            #yes-button {
+                font-family: 'letra';
+                font-size: 1000px;
+                padding: 100px 800px;
+                margin-top: 20px;
+                background-color: #ff69b4;
+                background-size: cover;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+                transform: translate(0%, 120%);
+                transition: scale 0.1s ease-in;
+                transform: translate(0,0);
+            }
+            #yes-button:hover {
+                opacity: 0.95;
+                scale: 0.95;
+            }
+        </style>
+    </div>
+    <script>
+    
+    function selectOption(option) {
+        if (option === 'yes') {
+            window.open("final.html");
+        }
+    }
+
+    </script>
+</body>
+</html>

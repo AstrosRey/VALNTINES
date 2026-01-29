@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'letra';
+    src: url(fonts/esp.ttf);
+}
+
+#container {
+  background-position: center;
+  place-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+#square {
+    width: 65%; /*Size of square*/
+    height: 90%;
+    background-color: black;  /*Fill color inside*/
+    border: 2px solid white;    /*White border*/
+}
+
+#question {
+    font-family: 'letra';
+    font-size: 80px;
+    transform: translate(0%, 100%);
+    color: white;
+}

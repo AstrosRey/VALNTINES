@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my valentine?</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet-->
+    <style>
+        body{
+            background-image: url('visual/lotuss.png');
+            height: 98vh;
+            background-size: cover;
+            background-position: center;
+            place-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="square">
+        <div id="actual-image">
+            <img src="visual/plz.gif" alt="gif" class="gif" id="gif">
+        </div> <!-- Diplay image -->
+        <div id="text-container">
+            <div id="question">Will you be my valentine?</div> <!-- Question -->
+            <div id="options">
+                <button id="yes-button" onclick="selectOption('yes')">Yes</button> <!-- Yes button -->
+                <button id="no-button" onclick="selectOption('no')">No</button> <!-- No button -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

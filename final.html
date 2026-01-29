@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amor eterno</title>
+    <link rel="stylesheet" href="style3.css">
+     <style>
+        body{
+            background-color: #fae1dd;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;  
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="square">
+            <img id="gif" src="visual/time.gif" alt="Love Gif">
+            <style>
+                #container {
+                    background-image: url('visual/pond.jpg');
+                    position: relative;
+                    box-shadow: 4px 4px 10px black;
+                    height: 151vh;
+                    width: 37vw;
+                    background-size: 70vh;
+                    background-position: center;
+                    display: grid;
+                    justify-content: center;
+                }
+                #square {
+                    height: 356px;
+                    width: 355px;
+                    background-color: #44876a;
+                    box-shadow: 4px 4px 10px black;
+                    transform: translate (-100%, -100%);
+                }
+                #gif {
+                    height: 350px;
+                    transform: translate(0,1%);
+                }
+            </style>
+        <div id = "paper">
+            <div id="question">Amor Eterno ❤️</div>
+            <div id="text">Te amo de aquí a la luna a pasitos de tortuga <br> 
+                De la luna al sol a pasitos de caracol <br> 
+                Del sol al mar a pasitos de calamar <br> 
+                Del mar al norte a pasitos de saltamonte <br> 
+                Del norte a la montaña a pasitos de araña <br> 
+                De la montaña a marte poqrue nunca dejaré de amarte <br>
+                De marte al infinito porque eres mi mundo entero</div>
+        </div>
+        </div>
+    </div>
+    <div class = "container2">
+        <div class = "valentine">
+            <div class = "envelope"></div>
+            <div class = "front"></div>
+            <div class = "card">
+                    <div class = "txt">Lets do a virtual date like before 💏</div>
+                    <div class = "heart"></div>
+            </div>
+            <div class = "hearts">
+                <div class = "one"></div>
+                <div class = "two"></div>
+                <div class = "three"></div>
+                <div class = "four"></div>
+                <div class = "five"></div>
+            </div>
+        </div>
+        <div class = "shadow"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+        var $card = $(".card");
+        $(".container2")
+        .on("mouseenter", function() {
+            $card.stop(true, true).animate({ top: "-90px" }, "slow");
+        })
+        .on("mouseleave", function() {
+            $card.stop(true, true).animate({ top: "0px" }, "slow");
+        });
+    });
+    </script>
+</body>
+</html>
